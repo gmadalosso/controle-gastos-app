@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../../src/ControleGastos.Api/ControleGastos.Api.csproj" />
+    <ProjectReference Include="../../backend/ControleGastos.Api/ControleGastos.Api.csproj" />
   </ItemGroup>
 
 </Project>
