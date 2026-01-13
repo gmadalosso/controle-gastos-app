@@ -1,6 +1,7 @@
 using ControleGastos.Api.Domain.Enums;
 
 namespace ControleGastos.Api.Domain.Entities;
+
 public class Transacao
 {
     public Guid Id { get; private set; }
@@ -13,6 +14,8 @@ public class Transacao
 
     public Guid CategoriaId { get; private set; }
     public Categoria Categoria { get; private set; } = null!;
+
+    protected Transacao() { }
 
     public Transacao(
         string descricao,

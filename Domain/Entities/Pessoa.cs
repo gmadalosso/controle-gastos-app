@@ -6,6 +6,8 @@ public class Pessoa
     public string Nome { get; private set; } = string.Empty;
     public int Idade { get; private set; }
 
+    protected Pessoa() { }
+
     public Pessoa(string nome, int idade)
     {
         if (string.IsNullOrWhiteSpace(nome))

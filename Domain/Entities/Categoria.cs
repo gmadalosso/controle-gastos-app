@@ -8,10 +8,12 @@ public class Categoria
     public string Descricao { get; private set; } = string.Empty;
     public Finalidade Finalidade { get; private set; }
 
+    protected Categoria() { }
+
     public Categoria(string descricao, Finalidade finalidade)
     {
         if (string.IsNullOrWhiteSpace(descricao))
-            throw new ArgumentException("Descrição da categoria é obrigatória", nameof(descricao));
+            throw new ArgumentException("Descrição da categoria é obrigatória.",nameof(descricao));
 
         Id = Guid.NewGuid();
         Descricao = descricao;
