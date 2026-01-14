@@ -107,9 +107,9 @@ O frontend estará disponível em `http://localhost:5173` ou `http://localhost:5
 
 ## ✨ Funcionalidades
 
-- ✅ Gerenciamento de **Pessoas** (criar, listar, buscar por ID, excluir)
+- ✅ Gerenciamento de **Pessoas** (criar, listar, buscar por ID, excluir, obter totais)
 - ✅ Gerenciamento de **Categorias** (criar, listar, buscar por ID, obter totais)
-- ✅ Gerenciamento de **Transações** (criar, listar, buscar por ID, excluir)
+- ✅ Gerenciamento de **Transações** (criar, listar, buscar por ID)
 - ✅ Validações de regras de negócio
 - ✅ Seed data automático na inicialização
 - ✅ Documentação Swagger da API
@@ -122,20 +122,22 @@ O frontend estará disponível em `http://localhost:5173` ou `http://localhost:5
 - `GET /api/pessoas` - Listar todas as pessoas
 - `GET /api/pessoas/{id}` - Obter pessoa por ID
 - `DELETE /api/pessoas/{id}` - Excluir pessoa
+- `GET /api/pessoas/{id}/totais` - Obter totais de receitas e despesas de uma pessoa específica
+- `GET /api/pessoas/totais` - Obter totais gerais de receitas e despesas de todas as pessoas
 
 ### Categorias
 
 - `POST /api/categorias` - Criar nova categoria
 - `GET /api/categorias` - Listar todas as categorias
 - `GET /api/categorias/{id}` - Obter categoria por ID
-- `GET /api/categorias/{id}/totais` - Obter totais de receitas e despesas por categoria
+- `GET /api/categorias/{id}/totais` - Obter totais de receitas e despesas de uma categoria específica
+- `GET /api/categorias/totais` - Obter totais de receitas e despesas agrupados por categoria
 
 ### Transações
 
 - `POST /api/transacoes` - Criar nova transação
 - `GET /api/transacoes` - Listar todas as transações
 - `GET /api/transacoes/{id}` - Obter transação por ID
-- `DELETE /api/transacoes/{id}` - Excluir transação
 
 ## 📐 Regras de Negócio
 
