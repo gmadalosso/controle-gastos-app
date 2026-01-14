@@ -1,33 +1,49 @@
 import { Link } from "react-router-dom";
-import "../styles/Dashboard.css";
 
 export function Dashboard() {
   return (
-    <div className="dashboard">
-      <div className="dashboard-header">
-        <h1>Controle de Gastos</h1>
+    <div className="container py-5">
+      <div className="text-center mb-5">
+        <h1 className="display-3 mb-3">Sistema de Controle de Gastos</h1>
       </div>
 
-      <div className="dashboard-grid">
-        <Link to="/pessoas" className="dashboard-card">
-          <div className="card-icon">👥</div>
-          <h2>Pessoas</h2>
-          <p>Administre as pessoas cadastradas no sistema</p>
-        </Link>
+      <div className="row g-4">
+        <div className="col-md-4">
+          <Link to="/pessoas" className="text-decoration-none">
+            <div className="card dashboard-card h-100 text-center shadow-sm">
+              <div className="card-body d-flex flex-column">
+                <div className="display-1 mb-3">👥</div>
+                <h5 className="card-title">Pessoas</h5>
+                <p className="card-text text-muted">Administre as pessoas cadastradas no sistema</p>
+              </div>
+            </div>
+          </Link>
+        </div>
 
-        <Link to="/categorias" className="dashboard-card">
-          <div className="card-icon">📁</div>
-          <h2>Categorias</h2>
-          <p>Gerencie as categorias de gastos e receitas</p>
-        </Link>
+        <div className="col-md-4">
+          <Link to="/categorias" className="text-decoration-none">
+            <div className="card dashboard-card h-100 text-center shadow-sm">
+              <div className="card-body d-flex flex-column">
+                <div className="display-1 mb-3">📁</div>
+                <h5 className="card-title">Categorias</h5>
+                <p className="card-text text-muted">Gerencie as categorias de gastos e receitas</p>
+              </div>
+            </div>
+          </Link>
+        </div>
 
-        <Link to="/transacoes" className="dashboard-card">
-          <div className="card-icon">💰</div>
-          <h2>Transações</h2>
-          <p>Visualize e administre todas as transações</p>
-        </Link>
+        <div className="col-md-4">
+          <Link to="/transacoes" className="text-decoration-none">
+            <div className="card dashboard-card h-100 text-center shadow-sm">
+              <div className="card-body d-flex flex-column">
+                <div className="display-1 mb-3">💰</div>
+                <h5 className="card-title">Transações</h5>
+                <p className="card-text text-muted">Visualize e administre todas as transações</p>
+              </div>
+            </div>
+          </Link>
+        </div>
       </div>
     </div>
   );
 }
-
