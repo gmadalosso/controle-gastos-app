@@ -1,6 +1,6 @@
-# Controle de Gastos
+# Sistema de Controle de Gastos
 
-Sistema de controle financeiro pessoal desenvolvido com .NET 8 e React, permitindo gerenciar pessoas, categorias e transações financeiras (receitas e despesas).
+Sistema de controle financeiro desenvolvido com .NET 8 e React, permitindo gerenciar pessoas, categorias e transações financeiras (receitas e despesas).
 
 ## 📋 Índice
 
