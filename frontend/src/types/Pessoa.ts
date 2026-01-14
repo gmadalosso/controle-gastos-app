@@ -4,6 +4,11 @@ export interface Pessoa {
   idade: number;
 }
 
+export interface PessoaCreate {
+  nome: string;
+  idade: number;
+}
+
 export interface PessoaTotais {
   pessoaId: string;
   nome: string;

@@ -6,6 +6,11 @@ export interface Categoria {
   finalidade: Finalidade;
 }
 
+export interface CategoriaCreate {
+  descricao: string;
+  finalidade: Finalidade;
+}
+
 export interface CategoriaTotais {
   categoriaId: string;
   descricao: string;
