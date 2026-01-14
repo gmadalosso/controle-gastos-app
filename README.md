@@ -59,7 +59,7 @@ controle-gastos-backend/
 - Visual Studio 2022, VS Code ou Rider (opcional)
 
 ### Frontend
-- [Node.js](https://nodejs.org/) (versão especificada no `.nvmrc`)
+- [Node.js](https://nodejs.org/) versão 22 ou superior
 - npm ou yarn
 
 ## 🚀 Como Executar
